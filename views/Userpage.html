@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" type="text/css" href="loader.css">
+      <script type="text/javascript" src="loader.js"></script>
+
+</head>
+<style type="text/css">
+	.nav-wrapper > a{
+		margin-left: 3%;
+		font-size: 38px;
+		color: #0099ff;
+	}
+	#nav-mobile > li > a{
+		color: grey;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	#nav-mobile{
+		margin-right: 80px;
+	}
+	.signup{
+		border: 2px solid grey;
+		background-color: #f2f2f2;
+		width: 40%
+	}
+	.space{
+		margin-top: 550px;
+	}
+  .side{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .side-nav{
+    background-color: #008080;
+  }
+</style>
+<script>
+	$(document).ready(function(){
+		$(".button-collapse").sideNav();
+    $('.modal-trigger').leanModal();
+	});
+</script>
+<body background="paper.jpg">
+<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="materialize.min.js"></script>
+      <script type="text/javascript" src="signlog.js"></script>
+ <div class="navbar-fixed">
+	 <nav class="black">
+	    <div class="nav-wrapper">
+	      <a href="/main.html" class="brand-logo">CS-Hub</a>
+	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <form class="col s12" method="post" action="/users/client">
+                <div class="row  z-depth-5">
+                  <li><div class="input-field col offset-s2">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" name="username" class="validate" required>
+                    <label for="icon_prefix" data-error="wrong" data-success="right">Enter Username</label>
+                  </div></li>
+                  <li><div class="input-field col offset-s1 col s7">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input id="password" type="password" name="password" class="validate" required>
+                    <label for="password">Enter Password</label>
+                  </div></li>
+                  <li><div class="col">
+                        <button class="btn waves-effect waves-light" type="submit" name="btntype" value="signin">Log In
+                    </button>
+                  </div></li>
+                </div>
+              </form>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+          <form class="col s12" method="post" action="/users/client">
+                <div class="row  z-depth-5">
+                  <li><div class="input-field col offset-s2">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" name="username" class="validate" required>
+                    <label for="icon_prefix" data-error="wrong" data-success="right">Username</label>
+                  </div></li>
+                  <li><div class="input-field offset-s1 col s7">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input id="password" type="password" name="password" class="validate" required>
+                    <label for="password">Password</label> 
+                  </div></li>
+                  <li><div class="col">
+                        <button class="btn waves-effect waves-light" type="submit" name="btntype" value="signin">Log In
+                    </button>
+                  </div></li>
+                </div>
+              </form>
+        </ul>
+	    </div>
+	  </nav>
+  </div>
+  <u><b><a href="#" data-activates="slide-out" class="button-collapse side btn btn-floating pulse"><i class="small material-icons">menu</i></a></b></u>
+  <div class="animate-bottom">
+    <div class="box">
+      <div class="row">
+        <form class="col s12" method="post" action="/users/client">
+            <div class="row signup z-depth-5">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">person_pin</i>
+                <input id="icon_prefix" type="text" name="name" class="validate" required>
+                <label for="icon_prefix" data-error="wrong" data-success="right">Name</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" name="username" class="validate" required>
+                <label for="icon_prefix" data-error="wrong" data-success="right">Username</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">phone</i>
+                <input id="icon_telephone" type="number" name="mobile" class="validate" required>
+                <label for="icon_telephone" data-error="wrong" data-success="right">Mobile</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">email</i>
+                <input id="email" type="email" name="email" class="validate" required>
+                <label for="email" data-error="wrong" data-success="right">Email</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">vpn_key</i>
+                <input id="password" type="password" name="password" class="validate" required>
+                <label for="password">Password</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">vpn_key</i>
+                <input id="password" type="password" name="confirmpassword" class="validate" required>
+                <label for="password">Confirm Password</label>
+              </div>
+              <div class="input-field col s12">
+                <div class="col s8">
+                	<b>Already have Account ? Sign in above.</b> 
+                </div>	
+                <div class="col s4">
+      	          <button class="btn waves-effect waves-light" name="btntype" type="submit" value="signup">Sign Up
+      			       <i class="material-icons right">send</i>
+      			      </button>
+      		      </div>
+              </div>
+                <div class="space">
+                	
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>   
+</div>
+  <div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red" href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="material-icons">mail</i></a></li>
+      <li><a class="btn-floating blue" href="https://www.facebook.com/"><i class="material-icons">perm_identity</i></a></li>
+      <li><a class="btn-floating green" href="https://www.google.co.in/"><i class="material-icons">youtube_searched_for</i></a></li>
+      <li><a class="btn-floating red" href="https://www.youtube.com/"><i class="material-icons">play_circle_filled</i></a></li>
+      <li><a class="btn-floating black" href="https://www.w3schools.com/"><i class="material-icons">code</i></a></li>
+    </ul>
+  </div>
+
+  <ul id="slide-out" class="side-nav">
+    <li><a href="/main.html"><i class="material-icons">person_pin</i> <b>Home</b></a></li>
+    <li><a href="/internship.html"><i class="material-icons">group_work</i> <b>Interships</b></a></li>
+    <li><a href="/onlinecourses.html"><i class="material-icons">airplay</i> <b>Learning World</b></a></li>
+    <li><a href="/skillarena.html"><i class="material-icons">receipt</i> <b>Skill Arena</b></a></li>
+    <li><a href="#"><i class="material-icons">today</i> <b>TechiWorld</b></a></li>
+    <li><a href="#"><i class="material-icons">forum</i> <b>Forum</b></a></li>
+  </ul>         
+</body>
+</html>

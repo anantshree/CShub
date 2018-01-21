@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" ng-app="CSHub">
+	<head>
+		<title>Skill Arena</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		
+		<meta name="description" content="Blueprint: Horizontal Drop-Down Menu" />
+		<meta name="keywords" content="horizontal menu, microsoft menu, drop-down menu, mega menu, javascript, jquery, simple menu" />
+		<meta name="author" content="Codrops" />
+		<!--link rel="shortcut icon" href="../favicon.ico"-->
+		 <link rel="stylesheet" type="text/css" href="bootstrap.css">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+		<script src="app.js"></script>
+		<!-- Used CSS Files -->
+		<link rel="stylesheet" type="text/css" href="default1.css" />
+		<link rel="stylesheet" type="text/css" href="component1.css" />
+		<!--font style-->
+		<link rel="stylesheet" href="css/font-awesome.min.css">	
+
+		<!-- Used CSS In CSHub -->
+       <link rel="stylesheet" type="text/css" href="main.css">
+       <link rel="stylesheet" type="text/css" href="skillarena.css">
+       <link rel="stylesheet" type="text/css" href="footer.css">
+
+       <!-- Used JAVASCRIPTS In CSHub -->
+       <script src="skillarena.js"></script>
+          	
+		
+	</head>
+<body>
+			
+	<div class="container-fluid" ng-controller="skillArenaEasy">
+						 	
+		<div class="main">
+
+			<nav id="cbp-hrmenu" class="cbp-hrmenu col-md-12 col-sm-12 navbar-inverse">
+				<div class="cshub col-md-2 col-sm-2" style="margin-top: -12px;"><h1><a href="/main.html"> CS-Hub</a></h1></div>
+				
+					<ul>
+					 
+						<li>
+							
+							<a href="/internship.html">Internships</a>
+							<div class="cbp-hrsub">
+								<div class="cbp-hrsub-inner"> 
+									<div>
+                                        <h4>Type</h4>
+                                        <ul class="intern">
+                                            <li><a href="/internship.html">Web Development</a></li>
+                                            <li><a href="/internship.html">Android Development</a></li>
+                                            <li><a href="/internship.html">IOS Development</a></li>
+                                            <li><a href="/internship.html">Show All</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>City</h4>
+                                        <ul class="intern">
+                                            <li><a href="/internship.html">Bangalore</a></li>
+                                            <li><a href="/internship.html">Hyderabad</a></li>
+                                            <li><a href="/internship.html">Delhi</a></li>
+                                            <li><a href="/internship.html">Mumbai</a></li>
+                                            <li><a href="/internship.html">Gurgaon</a></li>
+                                            <li><a href="/internship.html">Ahmedabad</a></li>
+                                            <li><a href="/internship.html">Work From Home</a></li>
+                                            <li><a href="/internship.html">Show All</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>Stipend</h4>
+                                        <ul class="intern">
+                                            <li><a href="/internship.html">8000 / Month</a></li>
+                                            <li><a href="/internship.html">10000 / Month</a></li>
+                                            <li><a href="/internship.html">15000 / Month</a></li>
+                                            <li><a href="/internship.html">20000 / Month</a></li>
+                                            <li><a href="/internship.html">25000 / Month</a></li>
+                                            <li><a href="/internship.html">Show All</a></li>
+                                        </ul>
+                                    </div>
+								</div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+						</li>
+						<li>
+							<a href="#">Learning Planet</a>
+							<div class="cbp-hrsub">
+								<div class="cbp-hrsub-inner">
+									<div>
+										<h4>Course Type</h4>
+										<ul class="learn">
+											<li><a href="/onlinecourses.html">Android Development</a></li>
+											<li><a href="/onlinecourses.html">IOS Development</a></li>
+											<li><a href="/onlinecourses.html">Java Programming</a></li>
+											<li><a href="/onlinecourses.html">C++</a></li>
+											<li><a href="/onlinecourses.html">IOT</a></li>
+											<li><a href="/onlinecourses.html">Artificial Intelligence</a></li>
+											<li><a id="show" href="/onlinecourses.html">Show All</a></li>
+										</ul>
+									</div>
+									<div>
+										<h4>Universities</h4>
+										<ul class="learn">
+											<li><a href="/onlinecourses.html">University of California</a></li>
+											<li><a href="/onlinecourses.html">University of Hongkong</a></li>
+											<li><a href="/onlinecourses.html">University of Michigan</a></li>
+											<li><a href="/onlinecourses.html">IIT Bombay</a></li>
+											<li><a href="/onlinecourses.html">IIT Delhi</a></li>
+											<li><a href="/onlinecourses.html">IIT Kanpur</a></li>
+											<li><a id="show" href="/onlinecourses.html">Show All</a></li>
+										</ul>
+									</div>
+									<div>
+										<h4>Levels</h4>
+										<ul class="learn">
+											<li><a href="/onlinecourses.html">Novice</a></li>
+											<li><a href="/onlinecourses.html">Intermediate</a></li>
+											<li><a href="/onlinecourses.html">Challenge</a></li>
+											<li><a id="show" href="/onlinecourses.html">Show All</a></li>
+										</ul>
+										<h4>Theoretical Courses</h4>
+										<ul class="learn">
+											<li><a href="/onlinecourses.html">Computer Network</a></li>
+											<li><a href="/onlinecourses.html">Compiler Design</a></li>
+											<li><a href="/onlinecourses.html">Parallel Computing</a></li>
+											<li><a href="/onlinecourses.html">Theory of Computation</a></li>
+											<li><a id="show" href="/onlinecourses.html">Show All</a></li>
+										</ul>
+									</div>
+								</div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+						</li>
+						<li>
+							<a href="#">Skill Arena</a>
+							<div class="cbp-hrsub">
+								<div class="cbp-hrsub-inner"> 
+									<div>
+										<h4>Learning Stack</h4>
+										<ul>
+											<li><a href="skillarena.html">Beginner</a></li>
+											<li><a href="skillarena.html">Easy</a></li>
+											<li><button ng-model="q" ng-click="q = 100">Medium</button></li>
+											<li><button ng-model="q" ng-click="q = 200">Hard</button></li>
+											<li><button ng-model="q" ng-click="q = 300">Challenge</button></li>
+										</ul>
+									</div>
+								</div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+						</li>
+						
+						<li>
+							<a href="#">Techi World</a>
+							<div class="cbp-hrsub">
+								<div class="cbp-hrsub-inner"> 
+									<div>
+										<h4>Type</h4>
+										<ul>
+											<li><a href="/technewsjobs.html">Jobs</a></li>
+											<li><a href="/technewscomputers.html">Computers</a></li>
+											<li><a href="/technewsitservices.html">It Services</a></li>
+										</ul>
+									</div>
+								</div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+						</li>
+						
+					</ul>
+				</div>	
+			</nav><br><br><br><br>
+			<div class="col-xs-2 col-md-2 col-sm-2 question">
+				<h4><center>Upcoming Contest</center></h4>
+				<h5><center><a href="https://www.codechef.com/MAY17">May LongChallenge</a></center></h5>
+				<h5><center><a href="https://www.codechef.com/snackdown/2017?utm_source=homepage&utm_medium=banner&utm_campaign=sd17">Snack Down 2017</a></center></h5>
+				<h5><center><a href="https://www.hackerearth.com/challenges/">Hacker Earth</a></center></h5>
+			</div>
+			<div class="col-xs-8 col-md-8 col-sm-8">            
+				<table class="table table-hover">
+				    <thead>
+				      <tr>
+				        <th>Problem Name</th>
+				        <th>Submissions</th>
+				        <th>Access</th>
+				      </tr>
+				    </thead>
+					<tbody ng-if="q == 0" ng-repeat="quest in questions">
+					      <tr>
+					        <td>{{quest.problemname}}</td>
+					        <td>{{quest.submissions}}</td>
+					        <td><a href="{{quest.problemlink}}">Access Question</a></td>
+					      </tr>
+					</tbody>
+					<tbody ng-if="q == 100" ng-repeat="quest in questions | startFrom: 0 | limitTo: 150 ">
+					      <tr>
+					        <td>{{quest.problemname}}</td>
+					        <td>{{quest.submissions}}</td>
+					        <td><a href="{{quest.problemlink}}">Access Question</a></td>
+					      </tr>
+					</tbody>
+					<tbody ng-if="q == 200" ng-repeat="quest in questions | startFrom: 150 | limitTo: 350">
+					      <tr>
+					        <td>{{quest.problemname}}</td>
+					        <td>{{quest.submissions}}</td>
+					        <td><a href="{{quest.problemlink}}">Access Question</a></td>
+					      </tr>
+					</tbody>
+					<tbody ng-if="q == 300" ng-repeat="quest in questions | startFrom: 350 | limitTo: 510">
+					      <tr>
+					        <td>{{quest.problemname}}</td>
+					        <td>{{quest.submissions}}</td>
+					        <td><a href="{{quest.problemlink}}">Access Question</a></td>
+					      </tr>
+					</tbody>
+				    
+				</table>
+		  	</div>
+		</div>
+		<footer id="myFooter">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-3 col-md-3 col-sm-3 myCols">
+                        <h5>Get started</h5>
+                        <ul>
+                            <li><a href="/main.html">Home</a></li>
+                            <li><a href="/Userpage.html">Sign up</a></li>
+                            <li><a href="#">Downloads</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-3 col-md-3 col-sm-3 myCols">
+                        <h5>About us</h5>
+                        <ul>
+                            <li><a href="#">Company Information</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-3 col-md-3 col-sm-3 myCols">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Help desk</a></li>
+                            <li><a href="/forumquestions.html">Forum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-3 col-md-3 col-sm-3 myCols">
+                        <h5>Legal</h5>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <center><div class="col-xs-offset-4 col-xs-4 col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 paddingtop-bottom">
+                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                  <div class="fb-xfbml-parse-ignore">
+                    <p>Join Us On : </p>
+                    <a href="https://www.facebook.com/facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=AddSession"><i class="fa fa-envelope" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://twitter.com/search?q=%23login&lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/uas/login"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div></center>
+            </div>
+        </footer>
+        <div class="footer-copyright" style="text-align: center;background-color: black;height: 50px"><br>
+                <p>© 2016 Copyright Aman's Corporation </p>
+        </div>
+	</div>	
+	
+<!-- Used JavaScripts Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="modernizr.custom.js"></script>
+	<script src="cbpHorizontalMenu.min.js"></script>
+	<script>
+		$(function() {
+				cbpHorizontalMenu.init();
+		});
+	</script>
+	</body>
+</html>

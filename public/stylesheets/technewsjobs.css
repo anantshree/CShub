@@ -1,0 +1,49 @@
+.cbp-hrmenu{
+	z-index: 1;
+}
+
+.pagewidth1{
+	height: 0px;
+}
+
+.pagewidth2{
+	height: 1800px;
+}
+
+@media screen and (max-width: 300px) {
+    .pagewidth1,.pagewidth2 {
+       height: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .pagewidth1,.pagewidth2 {
+       height: 20px;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .pagewidth1,.pagewidth2 {
+       height: 0px;
+    }
+}
+
+
+.pager > li > a{
+	color: #47a3da;
+}
+
+.searchstyle{
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navstyle{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input{
+  font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+}

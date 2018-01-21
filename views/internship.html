@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" ng-app="CSHub">
+	<head>
+		<title>Interships</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		
+		<meta name="description" content="Blueprint: Horizontal Drop-Down Menu" />
+		<meta name="keywords" content="horizontal menu, microsoft menu, drop-down menu, mega menu, javascript, jquery, simple menu" />
+		<meta name="author" content="Codrops" />
+		<!--link rel="shortcut icon" href="../favicon.ico"-->
+		 <link rel="stylesheet" type="text/css" href="bootstrap.css">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+		<script src="app.js"></script>
+		<!-- Used CSS Files -->
+		<link rel="stylesheet" type="text/css" href="default1.css" />
+		<link rel="stylesheet" type="text/css" href="component1.css" />
+		<!--font style-->
+		<link rel="stylesheet" href="css/font-awesome.min.css">	
+
+		<!-- Used CSS In CSHub -->
+       <link rel="stylesheet" type="text/css" href="main.css">
+       <link rel="stylesheet" type="text/css" href="footer.css">
+       <link rel="stylesheet" type="text/css" href="internship.css">
+
+       <!-- Used JAVASCRIPTS In CSHub -->
+       <script src="internship.js"></script>
+       <link rel="stylesheet" type="text/css" href="loader.css">
+       <script type="text/javascript" src="loader.js"></script>
+          	
+		
+	</head>
+<body>
+			
+	<div class="container-fluid" ng-controller="internshipData">
+	<div class="animate-bottom">					 	
+		<div class="main">
+
+			<nav id="cbp-hrmenu" class="cbp-hrmenu col-md-12 col-sm-12 navbar-inverse">
+				<div class="cshub col-md-2 col-sm-2" style="margin-top: -12px;"><h1><a href="/main.html"> CS-Hub</a></h1></div>
+				
+					<ul>
+					 
+						<li>
+							
+							<a href="#">Internships</a>
+							<div class="cbp-hrsub">
+								<div class="cbp-hrsub-inner"> 
+									<div>
+										<h4>Type</h4>
+										<ul>
+											<li><button ng-model="q" ng-click="q = 'Web Development'">Web Development</button></li>
+											<li><button ng-model="q" ng-click="q = 'Android Development'">Android Development</button></li>
+											<li><button ng-model="q" ng-click="q = 'IOS Development'">IOS Development</button></li>
+											<li><a id="show" href="/internship.html">Show All</a></li>
+										</ul>
+									</div>
+									<div>
+										<h4>City</h4>
+										<ul>
+											<li><button ng-model="q" ng-click="q = 'Bangalore'">Bangalore</button></li>
+											<li><button ng-model="q" ng-click="q = 'Hyderabad'">Hyderabad</button></li>
+											<li><button ng-model="q" ng-click="q = 'Delhi'">Delhi</button></li>
+											<li><button ng-model="q" ng-click="q = 'Mumbai'">Mumbai</button></li>
+											<li><button ng-model="q" ng-click="q = 'Gurgaon'">Gurgaon</button></li>
+											<li><button ng-model="q" ng-click="q = 'Ahmedabad'">Ahmedabad</button></li>
+											<li><button ng-model="q" ng-click="q = 'Work From Home'">Work From Home</button></li>
+											<li><a id="show" href="/internship.html">Show All</a></li>
+										</ul>
+									</div>
+									<div>
+										<h4>Stipend</h4>
+										<ul>
+											<li><button ng-model="q" ng-click="q = 8000"><i class="fa fa-inr" aria-hidden="true"></i> 8000 / Month</button></li>
+											<li><button ng-model="q" ng-click="q = 10000"><i class="fa fa-inr" aria-hidden="true"></i> 10000 / Month</button></li>
+											<li><button ng-model="q" ng-click="q = 15000"><i class="fa fa-inr" aria-hidden="true"></i> 15000 / Month</button></li>
+											<li><button ng-model="q" ng-click="q = 20000"><i class="fa fa-inr" aria-hidden="true"></i> 20000 / Month</button></li>
+											<li><button ng-model="q" ng-click="q = 25000"><i class="fa fa-inr" aria-hidden="true"></i> 25000 / Month</button></li>
+											<li><a id="show" href="/internship.html">Show All</a></li>
+										</ul>
+									</div>
+								</div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+						</li>
+						<li>
+							<a href="#">Learning Planet</a>
+							<div class="cbp-hrsub">
+								<div class="cbp-hrsub-inner">
+									<div>
+										<h4>Course Type</h4>
+										<ul class="learn">
+											<li><a href="/onlinecourses.html">Android Development</a></li>
+											<li><a href="/onlinecourses.html">IOS Development</a></li>
+											<li><a href="/onlinecourses.html">Java Programming</a></li>
+											<li><a href="/onlinecourses.html">C++</a></li>
+											<li><a href="/onlinecourses.html">IOT</a></li>
+											<li><a href="/onlinecourses.html">Artificial Intelligence</a></li>
+											<li><a id="show" href="/onlinecourses.html">Show All</a></li>
+										</ul>
+									</div>
+									<div>
+										<h4>Universities</h4>
+										<ul class="learn">
+											<li><a href="/onlinecourses.html">University of California</a></li>
+											<li><a href="/onlinecourses.html">University of Hongkong</a></li>
+											<li><a href="/onlinecourses.html">University of Michigan</a></li>
+											<li><a href="/onlinecourses.html">IIT Bombay</a></li>
+											<li><a href="/onlinecourses.html">IIT Delhi</a></li>
+											<li><a href="/onlinecourses.html">IIT Kanpur</a></li>
+											<li><a id="show" href="/onlinecourses.html">Show All</a></li>
+										</ul>
+									</div>
+									<div>
+										<h4>Levels</h4>
+										<ul class="learn">
+											<li><a href="/onlinecourses.html">Novice</a></li>
+											<li><a href="/onlinecourses.html">Intermediate</a></li>
+											<li><a href="/onlinecourses.html">Challenge</a></li>
+											<li><a id="show" href="/onlinecourses.html">Show All</a></li>
+										</ul>
+										<h4>Theoretical Courses</h4>
+										<ul class="learn">
+											<li><a href="/onlinecourses.html">Computer Network</a></li>
+											<li><a href="/onlinecourses.html">Compiler Design</a></li>
+											<li><a href="/onlinecourses.html">Parallel Computing</a></li>
+											<li><a href="/onlinecourses.html">Theory of Computation</a></li>
+											<li><a id="show" href="/onlinecourses.html">Show All</a></li>
+										</ul>
+									</div>
+								</div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+						</li>
+						<li>
+							<a href="#">Skill Arena</a>
+							<div class="cbp-hrsub">
+								<div class="cbp-hrsub-inner"> 
+									<div>
+										<h4>Learning Stack</h4>
+										<ul>
+											<li><a href="skillarena.html">Beginner</a></li>
+											<li><a href="skillarena.html">Easy</a></li>
+											<li><a href="skillarenaeasy.html">Medium</a></li>
+											<li><a href="skillarenaeasy.html">Hard</a></li>
+											<li><a href="skillarenaeasy.html">Challenge</a></li>
+										</ul>
+									</div>
+								</div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+						</li>
+						<li>
+							<a href="#">Techi World</a>
+							<div class="cbp-hrsub">
+								<div class="cbp-hrsub-inner"> 
+									<div>
+										<h4>Type</h4>
+										<ul>
+											<li><a href="/technewsjobs.html">Jobs</a></li>
+											<li><a href="/technewscomputers.html">Computers</a></li>
+											<li><a href="/technewsitservices.html">It Services</a></li>
+										</ul>
+									</div>
+								</div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+						</li>
+					</ul>
+			</nav><br><br><br><br>
+
+			<center><input ng-model="q" id="search" class="form-control form-horizontal" placeholder="&#xf002; Search by Type, City, Stipend, Startdate, etc... "></center>
+			<!-- Internship Records -->
+			<div>
+			    <div ng-repeat="data in datas | filter:q | startFrom:currentPage*pageSize | limitTo:pageSize">
+
+					<div class="col-md-offset-2 col-md-8 internship">
+					    <div class="internship_header">
+					        <div class="table-cell">
+					            <h4 title="{{data.type}}">
+					                <a href='{{data.link}}'>{{data.type}}</a>            </h4>
+					            <h4><a class="link_display_like_text" href="#" title="RedCarpetUp Inc">{{data.company}}</a></h4>
+					        </div>
+					        <div class="table-cell">
+					            <div class="internship_logo"></div>
+					        </div>
+					    </div>
+					    <div class="internship_details">
+					        <p>
+					            <span class="hidden-xs"><b>Location(s):</b></span>
+					            <span><a  class='location_link' href='#'><b>{{data.city}}</b></a></span>
+					        </p>
+					        <div class="table-responsive">
+					            <table class="table">
+					                <thead>
+					                    <tr>
+					                        <th>Start Date</th>
+					                        <th>Stipend</th>
+					                        <th>Apply By</th>
+					                    </tr>
+					                </thead>
+					                <tbody>
+					                    <tr>
+					                        <td>
+					                            <div id="start-date-first">{{data.startdate}}</div>                            
+					                        </td>
+					                        <td><i class="fa fa-inr" aria-hidden="true"></i> {{data.stipend}}                                                    </td>
+		
+					                        <td>{{data.applyby}}</td>
+					                    </tr>
+					                </tbody>
+					            </table>
+					        </div>
+					    </div>
+						    <div class="button_container">
+						        <div class="images_container pull-left">
+						            <div class="full-time-container">Full time</div>
+						        </div>
+						            
+						        <a class="view_detail_button"  href="{{data.link}}"><input type="button" class="btn btn-success pull-right" value="View Details"></a>
+						                         
+						    </div><br><hr>
+			        </div>
+			    
+			    </div>  
+			    	<div ng-if="numberOfPages() == 1">
+                        <div style="height: 4400px;"></div>
+                    </div>
+                    <div ng-if="numberOfPages() > 1">
+                        <div ng-class="changeClass()"></div>
+                    </div>
+				    <center><button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1" class="btn btn-primary">&nbsp;
+				        Previous
+				    </button>
+				    <b>{{currentPage+1}}/{{numberOfPages()}}</b>&nbsp;
+				    <button ng-disabled="currentPage >= getData().length/pageSize - 1" ng-click="currentPage=currentPage+1" class="btn btn-primary">
+				        Next
+				    </button></center>
+	   		</div>
+		</div>
+		
+   		
+   	  </div>	<br>
+	   	  <footer id="myFooter">
+	        <div class="container-fluid">
+	            <div class="row">
+	                <div class="col-xs-3 col-md-3 col-sm-3 myCols">
+	                    <h5>Get started</h5>
+	                    <ul>
+	                        <li><a href="/main.html">Home</a></li>
+	                        <li><a href="/Userpage.html">Sign up</a></li>
+	                        <li><a href="#">Downloads</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xs-3 col-md-3 col-sm-3 myCols">
+	                    <h5>About us</h5>
+	                    <ul>
+	                        <li><a href="#">Company Information</a></li>
+	                        <li><a href="#">Contact us</a></li>
+	                        <li><a href="#">Reviews</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xs-3 col-md-3 col-sm-3 myCols">
+	                    <h5>Support</h5>
+	                    <ul>
+	                        <li><a href="#">FAQ</a></li>
+	                        <li><a href="#">Help desk</a></li>
+	                        <li><a href="/forumquestions.html">Forum</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xs-3 col-md-3 col-sm-3 myCols">
+	                    <h5>Legal</h5>
+	                    <ul>
+	                        <li><a href="#">Terms of Service</a></li>
+	                        <li><a href="#">Terms of Use</a></li>
+	                        <li><a href="#">Privacy Policy</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <center><div class="col-xs-offset-4 col-xs-4 col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 paddingtop-bottom">
+		        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+		          <div class="fb-xfbml-parse-ignore">
+		          	<p>Join Us On :	</p>
+		            <a href="https://www.facebook.com/facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=AddSession"><i class="fa fa-envelope" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://twitter.com/search?q=%23login&lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/uas/login"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+		          </div>
+		        </div>
+		      </div></center>
+	        </div>
+	    </footer>
+	    <div class="footer-copyright" style="text-align: center;background-color: black;height: 50px"><br>
+	            <p>© 2016 Copyright Aman's Corporation </p>
+	    </div>
+	</div>	
+	
+<!-- Used JavaScripts Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="modernizr.custom.js"></script>
+	<script src="cbpHorizontalMenu.min.js"></script>
+	<script>
+		$(function() {
+				cbpHorizontalMenu.init();
+		});
+	</script>
+	</body>
+</html>

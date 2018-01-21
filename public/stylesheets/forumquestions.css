@@ -1,0 +1,44 @@
+table{
+		border: 2px solid grey;
+		box-shadow: 1px 4px grey;
+		margin-top: 20px;
+	}
+	tr > th{
+		color: white;
+		text-decoration: underline;
+		text-transform: uppercase;
+	}
+	thead{
+		background-color: #001a33;
+		opacity: 0.8;
+	}
+	tr > td{
+		font-weight: bold;
+	}
+	tbody > tr td:first-child{
+		color: brown;
+	}
+	.question{
+		margin-top: 20px;
+	}
+
+	.question > h4{
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	.question > h5{
+		font-weight: bold;
+	}
+	.cbp-hrmenu{
+	z-index: 1;
+}
+li > button{
+     background:none!important;
+     color: white;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     /*border is optional*/ 
+     cursor: pointer;
+     margin-top: 1vh;
+}

@@ -1,0 +1,40 @@
+body{
+    
+ }
+.panel
+{
+width: 100%;
+height: 1720px;  
+
+}
+.like
+{
+	height: 100px;
+}
+.forum{
+	width: 90%;
+}
+.mdiv{
+display:none;
+}
+.questionline{
+	display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+}
+hr{
+	display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 0.5px;
+}
+.name{
+	font-size: 17px;
+	color: grey;
+}

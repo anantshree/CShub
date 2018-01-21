@@ -1,0 +1,84 @@
+thead > tr > th{
+		color: grey;
+	}
+	tbody > tr > td{
+		color: black;
+		font-weight: bold;
+	}
+	h4 > a{
+		color: #568f8f;
+		font-weight: bold;
+	}
+	.full-time-container{
+		font-weight: bold;
+		background-color: orange;
+	}
+
+.location_link{
+color: #47a3da;
+}	
+
+.internship{
+	margin-top: 2vh;
+}
+
+.cbp-hrmenu{
+	z-index: 1;
+}
+
+.pagewidth1{
+	height: 5565px;
+}
+
+.pagewidth2{
+	height: 2800px;
+}
+
+@media screen and (max-width: 300px) {
+    .pagewidth1,.pagewidth2 {
+       height: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .pagewidth1,.pagewidth2 {
+       height: 20px;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .pagewidth1,.pagewidth2 {
+       height: 0px;
+    }
+}
+
+
+.pager > li > a{
+	color: #47a3da;
+}
+
+li > button{
+     background:none!important;
+     color: white;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     /*border is optional*/ 
+     cursor: pointer;
+     margin-top: 1vh;
+}
+
+.searchstyle{
+	color: grey;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.navstyle{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+input{
+	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+}

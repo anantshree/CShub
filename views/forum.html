@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" ng-app="CSHub">
+<head>
+  <title>Forum</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="forum.css">
+  <script type="text/javascript" src="forum.js"></script>
+  <!-- angular js library -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+</head>
+<body style="background-color:black" ng-controller="loginForum"> 
+  <div class="container" id="main">
+   <br>
+
+    <div class="panel panel-default" style=" box-shadow: 4px 4px 4px 4px grey;">
+        <div class="panel-body">
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/main.html">Home</a>
+        <a href="/Internship.html">Internships</a>
+        <a href="/onlinecourses.html">Learning World</a>
+        <a href="/skillarena.html">Skill Arena</a>
+        <a href="/forumquestions.html">View Questions</a>
+    </div>
+  </div>
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer;color: green;" onclick="openNav()">&#9776; </span>
+  </div>
+
+  <div class="container">
+    <h2>CSHub - Forum</h2>
+    <p><b> A Developers Point</b></p>
+    <form class="forum" method="post" action="/users/forum">
+      <div class="form-group">
+        <label for="name"><strong>Your UserName:</strong></label><br>
+        <input type="text" name="name" id="name" style="width: 250px;" required>
+      </div>
+      <div class="form-group">
+        <label for="comment"><strong>Question:</strong></label>
+        <textarea class="form-control" rows="8" id="comment" name="question" required></textarea>
+
+      </div>
+      <div ng-if="log.username == 'empty'">
+      <h2><b><a href="/Userpage.html">Login First</a></b></h2>
+      </div>
+      <div ng-if="log.username != 'empty'">
+      <button class="btn btn-success pull-right" type="submit" style="height:35px;width:80px;font-size:15px">Submit</button>
+      </div>
+    </form> 
+    <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><b>Login Alert</b></h4>
+              </div>
+              <div class="modal-body">
+                <p><h5>You need to Login to view and use forum...!!</h5></p>
+                <p><h5>If already Logined then press the close button</h5></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-primary" onclick="location.href='/Userpage.html';">Login</button>
+              </div>
+            </div>
+          </div>
+      </div> 
+  </div>
+</body>
+</html>

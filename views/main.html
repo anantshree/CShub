@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" ng-app="CSHub">
+	<head>
+		<title>Home</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		
+		<meta name="description" content="Blueprint: Horizontal Drop-Down Menu" />
+		<meta name="keywords" content="horizontal menu, microsoft menu, drop-down menu, mega menu, javascript, jquery, simple menu" />
+		<meta name="author" content="Codrops" />
+		<!--link rel="shortcut icon" href="../favicon.ico"-->
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+		<script src="app.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Used CSS Files -->
+		<link rel="stylesheet" type="text/css" href="default1.css" />
+		<link rel="stylesheet" type="text/css" href="component1.css" />
+		<!--font style-->
+		<link rel="stylesheet" href="font-awesome.css">	
+
+		<!-- Compiled and minified CSS -->
+       <link rel="stylesheet" type="text/css" href="main.css">
+       <link rel="stylesheet" type="text/css" href="footer.css">
+       <link rel="stylesheet" type="text/css" href="loader.css">
+       <script type="text/javascript" src="loader.js"></script>
+
+       <style>
+		  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+		  .affix {
+		      top: 0;
+		      width: 100%;
+		  }
+
+		  .affix + .container-fluid {
+		      padding-top: 70px;
+		  }
+  </style>
+          	
+		
+	</head>
+	<body onload="myFunction()" style="margin:0;">
+	<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+			
+		<div class="container-fluid">
+		<div>
+		<img src="16.jpg" style="width:100%;height:680px" class="img">
+
+     <div class="col-md-offset-5 msg1" style="top:570vh;color:white;font-size:40px">
+        	<h1 class="wp wp-7 animated fadeInuUp" style="font-size:60px;text-shadow: 2px 5px black;"><b>WE CREATE THINGS</b></h1>
+        	<h5 style="font-size:30px;text-shadow: 2px 2px black;">Connect With Us..</h5>
+        </div>
+        <div class="col-md-offset-6 msg2">
+        	
+   </div> 
+			</div>			 	
+			<div class="kuch-bhi" style="position:relative;top:55vh;">
+
+				<nav style="z-index:1;" id="" class="cbp-hrmenu col-md-12 col-sm-12 navbar-inverse " data-spy="affix" data-offset-top="590">
+				<div class="cshub col-md-2 col-sm-2" style="margin-top: -12px;"><a href="/index.html"><h1> CS-Hub</h1></a></div>
+				
+					<ul ng-controller="loginCheck">
+					 	<li><a href="/internship.html">Internships</a></li>
+						<li><a href="/onlinecourses.html">Learning Planet</a></li>
+						<li><a href="/skillarena.html">Skill Arena</a></li>
+						<li><a href="/technewsjobs.html">Techi World</a></li>
+						<li><a href="/forumquestions.html">Forum</a></li>
+						<li class="signlog" ng-if="userlog[0].username == 'empty'">
+								<a href="/Userpage.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+					        <a href="/Userpage.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+						</li>
+						<li class="signlog" ng-if="userlog[0].username != 'empty'">
+								<a href="#"><span class="glyphicon glyphicon-user"></span> {{userlog[0].username}}</a>
+					        <a href="/mainlogout.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a>
+						</li>
+						
+					</ul>
+				</nav>
+			</div>
+		</div>
+     
+<div id="you" style="position:relative;top:50vh;height:600px;">
+ 
+</div>
+<div>
+
+<!-- Top Navigation -->
+			
+			<div class="wrapper">
+				<ul class="stage clearfix">
+                
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>It's An Internship Time</h1>
+									<span class="duration">Half time/Full time</span>
+								</header>
+								<p>
+									An internship is an opportunity offered by an employer to potential employees, called interns, to work at a firm for a fixed, limited period of time. Interns are usually undergraduates or students, and most internships last for any length of time between one week and 12 months. <a href="/internship.html"> Let's find for you</a>
+								</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>It's Show Down Time</h1>
+									<span class="rating">Train Yourself</span>
+									<span class="duration">To Compete With the world</span>
+								</header>
+								<p>
+									A Competetive programming is a best way to increase the mental sharpness.It's daily practice provide the various advantages..
+									like Job offers, Everyday Skills, Realistic life esteem, Specialized Knowledge, Traveling and Meeting new people, Money<a href="/skillarena.html"> Let's Show Down</a> 
+								</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>Learn form Home</h1>
+									<span class="rating">Less Costs</span>
+									<span class="duration">Variety of program and courses</span>
+								</header>
+								<p>
+									The current challenges facing traditional colleges and universities, including higher tuition, budget cuts, and course shortages, have caused many students to search for alternatives i.e learn online which gives Variety of Program and courses, Lower total costs, More comfortable learning environment, Convenience and flexibility, Career advancement<a href="/onlinecourses.html"> Let's find for you</a>
+								</p>
+							</div>
+						</div>
+					</li>
+						
+				</ul>
+			</div><!-- /wrapper -->
+			</div>
+			
+	<footer id="myFooter">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3 myCols">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="/main.html">Home</a></li>
+                        <li><a href="/Userpage.html">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3 myCols">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3 myCols">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="/forumquestions.html">Forum</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3 myCols">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-offset-4 col-md-4 paddingtop-bottom">
+	        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+	          <div class="fb-xfbml-parse-ignore">
+	          	<p>Join Us On :	</p>
+	            <a href="https://www.facebook.com/facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=AddSession"><i class="fa fa-envelope" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://twitter.com/search?q=%23login&lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/uas/login"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+	          </div>
+	        </div>
+	      </div>
+        </div>
+    </footer>
+    <div class="footer-copyright" style="text-align: center;background-color: black;height: 50px"><br>
+            <p>© 2016 Copyright Aman's Corporation </p>
+    </div>
+</div>		
+<!-- Used JavaScripts Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="modernizr.custom.js"></script>
+	<script src="cbpHorizontalMenu.min.js"></script>
+	<script src="text-slider.js"></script>
+	<script>
+		$(function() {
+				cbpHorizontalMenu.init();
+		});
+	</script>
+	</body>
+</html>
